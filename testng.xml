@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Lumatest">
+    <classes>
+      <class name="Test_LumaSite.ForgotPwdPg_Verify"/>
+      <class name="Test_LumaSite.SignInpgEleDisplay_Verify"/>
+      <class name="Test_LumaSite.Homepage_verify"/>
+      <class name="Test_LumaSite.MenTab_Verify"/>
+      <class name="Test_LumaSite.WomenMenu_Verify"/>
+      <class name="Test_LumaSite.SignInpgErrMsg_Verify"/>
+      <class name="Test_LumaSite.CrtActpgErrMsg_Verify"/>
+    </classes>
+  </test> <!-- Lumatest -->
+</suite> <!-- Suite -->

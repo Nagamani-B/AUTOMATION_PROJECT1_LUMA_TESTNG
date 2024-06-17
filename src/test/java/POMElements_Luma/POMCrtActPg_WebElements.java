@@ -1,23 +1,24 @@
-package Test_LumaSite;
+
+package POMElements_Luma;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-public class CrtActPage_WebElements
+public class POMCrtActPg_WebElements
 {
 	WebDriver drv;
-	public CrtActPage_WebElements(WebDriver drv)
+	
+	public POMCrtActPg_WebElements(WebDriver drv)
 	{
 		this.drv=drv;
 	}
 	
 	public void Launch_URL()
 	{
-		drv=new FirefoxDriver();
+		
 		drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		drv.manage().window().maximize();
 		drv.manage().deleteAllCookies();

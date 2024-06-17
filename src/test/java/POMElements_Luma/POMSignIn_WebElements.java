@@ -1,33 +1,18 @@
-package Test_LumaSite;
+package POMElements_Luma;
 
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class SignIn_WebElements 
+public class POMSignIn_WebElements 
 {
 	
 	WebDriver drv;
-	
-	public SignIn_WebElements(WebDriver drv1)
-	{
-		this.drv=drv1;
-	}
-	
-	public void Op_URL()
-	{
-		drv=new FirefoxDriver();
-		drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		drv.manage().window().maximize();
-		drv.manage().deleteAllCookies();
-		drv.get("https://magento.softwaretestingboard.com/");
-		drv.findElement(By.className("authorization-link")).click();
-		
-	}
+			
 	//Repository of By class
 	
 	By signlinkEle=By.className("authorization-link");
@@ -44,9 +29,24 @@ public class SignIn_WebElements
 	By resetemailtxt=By.id("email_address");
 	
 	
-	
 	By ErrMsgResetPwd=By.xpath("//div[@for='email_address']");
 	
+	public POMSignIn_WebElements(WebDriver wd)
+	{
+		this.drv=wd;
+	}
+	
+	
+	public void Op_URL()
+	{
+		drv=new ChromeDriver();
+		drv.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		drv.manage().window().maximize();
+		drv.manage().deleteAllCookies();
+		drv.get("https://magento.softwaretestingboard.com/");
+		drv.findElement(By.className("authorization-link")).click();
+		
+	}
 	
 	public void enteremail(String eml)
 	{

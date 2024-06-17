@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  Lumatest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Lumatest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 13 17:23:42 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>463 seconds (463498 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_LumaSite.Homepage_verify.verifyPageTitle_Test()'><b>verifyPageTitle_Test</b><br>Test class: Test_LumaSite.Homepage_verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.Homepage_verify@27e0f2f5</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgEleDisplay_Verify.verifyEmailTxtDisplay_Test()'><b>verifyEmailTxtDisplay_Test</b><br>Test class: Test_LumaSite.SignInpgEleDisplay_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.SignInpgEleDisplay_Verify@660e9100</td></tr>
+<tr>
+<td title='Test_LumaSite.CrtActpgErrMsg_Verify.Verify_AllTxtErmsg_Test()'><b>Verify_AllTxtErmsg_Test</b><br>Test class: Test_LumaSite.CrtActpgErrMsg_Verify</td>
+<td></td>
+<td>2</td>
+<td>Test_LumaSite.CrtActpgErrMsg_Verify@5f577419</td></tr>
+<tr>
+<td title='Test_LumaSite.Homepage_verify.verifyCreateAccountDisplay_Test()'><b>verifyCreateAccountDisplay_Test</b><br>Test class: Test_LumaSite.Homepage_verify</td>
+<td></td>
+<td>2</td>
+<td>Test_LumaSite.Homepage_verify@27e0f2f5</td></tr>
+<tr>
+<td title='Test_LumaSite.CrtActpgErrMsg_Verify.Verify_LstnameErmsg_Test()'><b>Verify_LstnameErmsg_Test</b><br>Test class: Test_LumaSite.CrtActpgErrMsg_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.CrtActpgErrMsg_Verify@5f577419</td></tr>
+<tr>
+<td title='Test_LumaSite.ForgotPwdPg_Verify.verifyFrgtPwdFunction_Test()'><b>verifyFrgtPwdFunction_Test</b><br>Test class: Test_LumaSite.ForgotPwdPg_Verify</td>
+<td></td>
+<td>7</td>
+<td>Test_LumaSite.ForgotPwdPg_Verify@9635fa</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgEleDisplay_Verify.verifyPasswordTxtDisplay_Test()'><b>verifyPasswordTxtDisplay_Test</b><br>Test class: Test_LumaSite.SignInpgEleDisplay_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.SignInpgEleDisplay_Verify@660e9100</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgErrMsg_Verify.Verify_EmailErrorMsg_Test()'><b>Verify_EmailErrorMsg_Test</b><br>Test class: Test_LumaSite.SignInpgErrMsg_Verify</td>
+<td></td>
+<td>1</td>
+<td>Test_LumaSite.SignInpgErrMsg_Verify@7249dadf</td></tr>
+<tr>
+<td title='Test_LumaSite.MenTab_Verify.ClickMen_Bottoms_Test()'><b>ClickMen_Bottoms_Test</b><br>Test class: Test_LumaSite.MenTab_Verify</td>
+<td></td>
+<td>13</td>
+<td>Test_LumaSite.MenTab_Verify@6db66836</td></tr>
+<tr>
+<td title='Test_LumaSite.CrtActpgErrMsg_Verify.Verify_EmlErmsg_Test()'><b>Verify_EmlErmsg_Test</b><br>Test class: Test_LumaSite.CrtActpgErrMsg_Verify</td>
+<td></td>
+<td>2</td>
+<td>Test_LumaSite.CrtActpgErrMsg_Verify@5f577419</td></tr>
+<tr>
+<td title='Test_LumaSite.Homepage_verify.VerifyLogoDisplay_Test()'><b>VerifyLogoDisplay_Test</b><br>Test class: Test_LumaSite.Homepage_verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.Homepage_verify@27e0f2f5</td></tr>
+<tr>
+<td title='Test_LumaSite.MenTab_Verify.ClickMenTab_Test()'><b>ClickMenTab_Test</b><br>Test class: Test_LumaSite.MenTab_Verify</td>
+<td></td>
+<td>7</td>
+<td>Test_LumaSite.MenTab_Verify@6db66836</td></tr>
+<tr>
+<td title='Test_LumaSite.CrtActpgErrMsg_Verify.Verify_CnfPwdErmsg_Test()'><b>Verify_CnfPwdErmsg_Test</b><br>Test class: Test_LumaSite.CrtActpgErrMsg_Verify</td>
+<td></td>
+<td>1</td>
+<td>Test_LumaSite.CrtActpgErrMsg_Verify@5f577419</td></tr>
+<tr>
+<td title='Test_LumaSite.Homepage_verify.verifySearchboxDisplay_Test()'><b>verifySearchboxDisplay_Test</b><br>Test class: Test_LumaSite.Homepage_verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.Homepage_verify@27e0f2f5</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgEleDisplay_Verify.verifySignInlinkfunction_Test()'><b>verifySignInlinkfunction_Test</b><br>Test class: Test_LumaSite.SignInpgEleDisplay_Verify</td>
+<td></td>
+<td>3</td>
+<td>Test_LumaSite.SignInpgEleDisplay_Verify@660e9100</td></tr>
+<tr>
+<td title='Test_LumaSite.WomenMenu_Verify.ClickWomen_Test()'><b>ClickWomen_Test</b><br>Test class: Test_LumaSite.WomenMenu_Verify</td>
+<td></td>
+<td>6</td>
+<td>Test_LumaSite.WomenMenu_Verify@db44aa2</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgErrMsg_Verify.Verify_EmlPwdErMsg_Test()'><b>Verify_EmlPwdErMsg_Test</b><br>Test class: Test_LumaSite.SignInpgErrMsg_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.SignInpgErrMsg_Verify@7249dadf</td></tr>
+<tr>
+<td title='Test_LumaSite.ForgotPwdPg_Verify.verifyFrgtPwdLinkDisplay_Test()'><b>verifyFrgtPwdLinkDisplay_Test</b><br>Test class: Test_LumaSite.ForgotPwdPg_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.ForgotPwdPg_Verify@9635fa</td></tr>
+<tr>
+<td title='Test_LumaSite.CrtActpgErrMsg_Verify.Verify_FnameErmsg_Test()'><b>Verify_FnameErmsg_Test</b><br>Test class: Test_LumaSite.CrtActpgErrMsg_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.CrtActpgErrMsg_Verify@5f577419</td></tr>
+<tr>
+<td title='Test_LumaSite.MenTab_Verify.ClickMen_Top_Test()'><b>ClickMen_Top_Test</b><br>Test class: Test_LumaSite.MenTab_Verify</td>
+<td></td>
+<td>12</td>
+<td>Test_LumaSite.MenTab_Verify@6db66836</td></tr>
+<tr>
+<td title='Test_LumaSite.Homepage_verify.verifySignInlinkDisplay_Test()'><b>verifySignInlinkDisplay_Test</b><br>Test class: Test_LumaSite.Homepage_verify</td>
+<td></td>
+<td>1</td>
+<td>Test_LumaSite.Homepage_verify@27e0f2f5</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgErrMsg_Verify.Verify_PwdErrorMsg_Test()'><b>Verify_PwdErrorMsg_Test</b><br>Test class: Test_LumaSite.SignInpgErrMsg_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.SignInpgErrMsg_Verify@7249dadf</td></tr>
+<tr>
+<td title='Test_LumaSite.WomenMenu_Verify.ClickWomenBottoms_Test()'><b>ClickWomenBottoms_Test</b><br>Test class: Test_LumaSite.WomenMenu_Verify</td>
+<td></td>
+<td>12</td>
+<td>Test_LumaSite.WomenMenu_Verify@db44aa2</td></tr>
+<tr>
+<td title='Test_LumaSite.SignInpgEleDisplay_Verify.verifyCrtActBtn_Test()'><b>verifyCrtActBtn_Test</b><br>Test class: Test_LumaSite.SignInpgEleDisplay_Verify</td>
+<td></td>
+<td>0</td>
+<td>Test_LumaSite.SignInpgEleDisplay_Verify@660e9100</td></tr>
+<tr>
+<td title='Test_LumaSite.WomenMenu_Verify.ClickWomenTops_Test()'><b>ClickWomenTops_Test</b><br>Test class: Test_LumaSite.WomenMenu_Verify</td>
+<td></td>
+<td>19</td>
+<td>Test_LumaSite.WomenMenu_Verify@db44aa2</td></tr>
+<tr>
+<td title='Test_LumaSite.ForgotPwdPg_Verify.verifyResetpwdfunction_Test()'><b>verifyResetpwdfunction_Test</b><br>Test class: Test_LumaSite.ForgotPwdPg_Verify</td>
+<td></td>
+<td>2</td>
+<td>Test_LumaSite.ForgotPwdPg_Verify@9635fa</td></tr>
+<tr>
+<td title='Test_LumaSite.CrtActpgErrMsg_Verify.Verify_PwdErmsg_Test()'><b>Verify_PwdErmsg_Test</b><br>Test class: Test_LumaSite.CrtActpgErrMsg_Verify</td>
+<td></td>
+<td>1</td>
+<td>Test_LumaSite.CrtActpgErrMsg_Verify@5f577419</td></tr>
+<tr>
+<td title='Test_LumaSite.WomenMenu_Verify.ClickWmTopRaincoat_Test()'><b>ClickWmTopRaincoat_Test</b><br>Test class: Test_LumaSite.WomenMenu_Verify</td>
+<td></td>
+<td>18</td>
+<td>Test_LumaSite.WomenMenu_Verify@db44aa2</td></tr>
+<tr>
+<td title='Test_LumaSite.WomenMenu_Verify.CountOFAddtoCart_Verify_Test()'><b>CountOFAddtoCart_Verify_Test</b><br>Test class: Test_LumaSite.WomenMenu_Verify</td>
+<td></td>
+<td>18</td>
+<td>Test_LumaSite.WomenMenu_Verify@db44aa2</td></tr>
+</table><p>
+</body>
+</html>

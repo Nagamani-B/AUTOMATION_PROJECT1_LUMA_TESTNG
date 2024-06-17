@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_LumaSite.SignInpage_verify">
+      <class name="Test_LumaSite.MenTab_Verify">
         <methods>
-          <include name="closedriver"/>
-          <include name="verifyResetpwdfunction_Test"/>
-          <include name="openSignIn"/>
+          <include name="ClickMen_Top_Test"/>
+          <include name="ClickMenTab_Test"/>
+          <include name="teardown"/>
+          <include name="ClickMen_Bottoms_Test"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Test_LumaSite.SignInpage_verify -->
+      </class> <!-- Test_LumaSite.MenTab_Verify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -24,6 +24,11 @@
 
 
 
+  	<dependency>
+  		<groupId>com.excelr</groupId>
+  		<artifactId>ExcelR_TestNG_Datadrv_FRMWORK</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
   

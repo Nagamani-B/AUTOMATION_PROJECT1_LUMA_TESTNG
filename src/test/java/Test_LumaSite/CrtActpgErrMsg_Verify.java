@@ -1,28 +1,37 @@
 package Test_LumaSite;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
+import POMElements_Luma.POMCrtActPg_WebElements;
+
+
 public class CrtActpgErrMsg_Verify
 {
 	
-	WebDriver drv=new FirefoxDriver();
-	CrtActPage_WebElements crtpgEle=new CrtActPage_WebElements(drv);
+	WebDriver drv=new ChromeDriver();
+	
+	POMCrtActPg_WebElements crtpgEle=new POMCrtActPg_WebElements(drv); 
 	
 	
 	@BeforeMethod
-	public void setup()
+	public void setup() 
 	{
-        crtpgEle.Launch_URL();		
+		drv=new ChromeDriver();
+        crtpgEle.Launch_URL();
+        //Thread.sleep(3000);
+        crtpgEle.Click_CrtActLink();
+        
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Verify_FnameErmsg_Test()
 	{
-		crtpgEle.Click_CrtActLink();
+		//crtpgEle.Click_CrtActLink();
 		crtpgEle.Enterfname(" ");
 		crtpgEle.Enterlname("S");
 		crtpgEle.EnterEml("xyz@gmail.com ");
@@ -33,10 +42,10 @@ public class CrtActpgErrMsg_Verify
 		crtpgEle.VerifyFnameErMsg();
 	}  
 	
-	@Test
+	@Test(enabled=true)
 	public void Verify_LstnameErmsg_Test()
 	{
-		crtpgEle.Click_CrtActLink();
+		//crtpgEle.Click_CrtActLink();
 		crtpgEle.Enterfname("abc ");
 		crtpgEle.Enterlname(" ");
 		crtpgEle.EnterEml("xyz@gmail.com ");
@@ -47,10 +56,10 @@ public class CrtActpgErrMsg_Verify
 		crtpgEle.VerifyLnameErMsg();
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Verify_EmlErmsg_Test()
 	{
-		crtpgEle.Click_CrtActLink();
+		//crtpgEle.Click_CrtActLink();
 		crtpgEle.Enterfname("abc ");
 		crtpgEle.Enterlname("s");
 		crtpgEle.EnterEml(" ");
@@ -61,24 +70,23 @@ public class CrtActpgErrMsg_Verify
 		crtpgEle.VerifyEmlErMsg();
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Verify_PwdErmsg_Test()
 	{
-		crtpgEle.Click_CrtActLink();
+		//crtpgEle.Click_CrtActLink();
 		crtpgEle.Enterfname("abc ");
 		crtpgEle.Enterlname("S");
 		crtpgEle.EnterEml("xyz@gmail.com ");
 		crtpgEle.EnterPwd(" ");
 		crtpgEle.EnterCnfPwd("pkr@123 ");
-		
 		crtpgEle.ClickCrtActbtn();
 		crtpgEle.VerifyPwdErMsg();
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Verify_CnfPwdErmsg_Test()
 	{
-		crtpgEle.Click_CrtActLink();
+		//crtpgEle.Click_CrtActLink();
 		crtpgEle.Enterfname("abc ");
 		crtpgEle.Enterlname("S");
 		crtpgEle.EnterEml("xyz@gmail.com ");
@@ -89,10 +97,10 @@ public class CrtActpgErrMsg_Verify
 		crtpgEle.VerifyCnfPwdErMsg();
 	}
 	
-	@Test
+	@Test(enabled=true)
 	public void Verify_AllTxtErmsg_Test()
 	{
-		crtpgEle.Click_CrtActLink();
+		//crtpgEle.Click_CrtActLink();
 		crtpgEle.Enterfname(" ");
 		crtpgEle.Enterlname(" ");
 		crtpgEle.EnterEml(" ");

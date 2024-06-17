@@ -1,22 +1,25 @@
 package Test_LumaSite;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import POMElements_Luma.POMSignIn_WebElements;
+
 public class SignInpgEleDisplay_Verify 
 {
    
 	WebDriver drv1=new FirefoxDriver();
-    SignIn_WebElements signele=new SignIn_WebElements(drv1);
+    POMSignIn_WebElements signele=new POMSignIn_WebElements(drv1);
     
 
 	@BeforeMethod
 	public void openSignIn()
 	{
-				
+		drv1=new ChromeDriver();		
 		signele.Op_URL();
 				
 	}
